@@ -88,7 +88,7 @@ A microservices-based system designed to predict no-show passengers, optimize ov
 
 ```bash
     cd notification-service
-  ./mvnw quarkus:dev
+    ./mvnw quarkus:dev
 ```
 
 ---
@@ -102,6 +102,9 @@ A microservices-based system designed to predict no-show passengers, optimize ov
 
 #### Description: 
     Create a new booking for a flight.
+
+#### Endpoint
+    http://localhost:8082/booking/
 
 #### Request Body:
 
@@ -124,7 +127,6 @@ A microservices-based system designed to predict no-show passengers, optimize ov
   "bookingStatus": "CONFIRMED",
   "bookedTime": "13:45:00"
 }
-
 ```
 
 ---
@@ -380,7 +382,7 @@ A microservices-based system designed to predict no-show passengers, optimize ov
 
 ## 🌱 Future Enhancements
 - ✅ Add JWT-based authentication
-- 🔄 Replace REST with Kafka messaging
+- 🔄 Replace the REST with Kafka messaging
 - 🐳 Dockerize all services
 - 📊 Create a frontend dashboard
 - 🧠 ML model improvements
